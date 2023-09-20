@@ -1,0 +1,159 @@
+/* Common style */
+*{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Mono', monospace;
+    font-family: 'Work Sans', sans-serif;
+}
+.primary-title{
+    color:#131313;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.primary-text{
+    color:#727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.primary-button{
+    height: 64px;
+    padding: 0px 20px;
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    background: #FF900E;
+    border: none;
+}
+/* Header style */
+header{
+    background-color:rgba(255, 144, 14, 0.10);
+    padding: 0px 240px;
+}
+nav,ul{
+    display: flex;
+}
+nav{
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    gap: 40px;
+}
+li{
+    list-style: none;
+    color: #424242;
+}
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner-title{
+    font-size: 4rem;
+    width: 868px;
+    text-align: center;
+}
+.banner-text p{
+    height: 52px;
+    width: 868px;
+}
+.banner-text img{
+    margin: 30px 0px;
+    width: 100%;
+}
+
+/* Main section */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+/* Quick list section */
+.quick-list{
+    display: flex;
+    align-items: center;
+}
+.quick-list-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+.quick-list-texts{
+    padding:70px;
+}
+
+/* Features */
+.features{
+    display: flex;
+    gap: 130px;
+    margin: 70px 0px;
+}
+.card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    margin-bottom: 10px;
+}
+.ten-years-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    width: 342px;
+    padding: 2px;
+    position: relative;
+    bottom: 100px;
+    right: 80px;
+}
+.ten-years-badge h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.ten-years-badge p{
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+}
+/* Responsive for mobile */
+@media screen and (max-width:700px) {
+    header{
+        padding:0px;
+    }
+    nav,ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    ul{
+        gap: 20px;
+    }
+    .banner-title,.banner-text p{
+        width: 80%;
+    }
+    .banner-text p{
+        height: 100%;
+    }
+    .quick-list{
+        flex-direction: column;
+    }
+    .quick-list-images{
+        grid-template-columns: 1fr;
+    }
+    .quick-list-texts{
+        padding:px;
+    }
+    .features{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .feature-img img{
+        width: 100%;
+    }
+    .ten-years-badge{
+       position: static;
+        width: 50%;
+        margin: 0px auto;
+    }
+}
